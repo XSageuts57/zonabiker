@@ -503,9 +503,6 @@
     .scroll-visible {
         opacity: 1;
         transform: translateY(0);
-<<<<<<< HEAD
-    }
-=======
     }
 
     .tarjeta-tarifa {
@@ -565,4 +562,3 @@
     background-position: 0% 50%;
   }
 }
->>>>>>> 4b15515ff55f3d3d74eab22c44c5e13117a6655d
