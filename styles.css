@@ -570,6 +570,73 @@
 
   /* --------- ESTILOS SOLO PARA ESCRITORIO (≥1000 px) --------- */
 @media (min-width: 1000px) {
+  /* ---------- 1. PROMOCIONES Y GALERÍA ---------- */
+.carrusel .titulo-seccion {
+  /* ‑‑ centra levemente hacia la derecha ‑‑ */
+  margin-left: 6%;          /* ajusta a tu gusto (≈115 px en 1920 px) */
+  text-align: left;         /* queremos que el texto arranque donde empiece la barra */
+  position: relative;
+}
+
+.carrusel .titulo-seccion::before,
+.carrusel .titulo-seccion::after{
+  content:'';
+  position:absolute;
+  top:50%;
+  width:90px;               /* largo de las barras */
+  height:3px;
+  background:#ff4454;
+}
+
+.carrusel .titulo-seccion::before{
+  right:100%;               /* barra izquierda pegada al inicio del texto */
+  margin-right:20px;        /* separación texto‑barra */
+}
+
+.carrusel .titulo-seccion::after{
+  left:100%;                /* barra derecha después del texto */
+  margin-left:20px;
+}
+
+/* ---------- 2. TARIFARIO ---------- */
+.tarifario .titulo-seccion{
+  margin-left:6%;           /* mismo desplazamiento */
+  text-align:left;
+  position:relative;
+}
+
+.tarifario .titulo-seccion::before,
+.tarifario .titulo-seccion::after{
+  content:'';
+  position:absolute;
+  top:50%;
+  width:90px;
+  height:3px;
+  background:#ff4454;
+}
+
+.tarifario .titulo-seccion::before{
+  right:100%;
+  margin-right:20px;
+}
+
+.tarifario .titulo-seccion::after{
+  left:100%;
+  margin-left:20px;
+}
+
+/* 1️⃣  Nada puede medir más que la pantalla */
+*,
+*::before,
+*::after{
+  box-sizing:border-box;        /* evita que el padding sume ancho extra */
+}
+
+/* 2️⃣  Cortamos cualquier desbordamiento horizontal */
+html,body{
+  max-width:100%;
+  overflow-x:hidden;
+}
     /* Carrusel de promociones solo en PC */
 .carrusel-wrapper {
   max-width: 1000px;
@@ -850,73 +917,7 @@
     margin: 0 auto;
   }
 }
-/* ---------- 1. PROMOCIONES Y GALERÍA ---------- */
-.carrusel .titulo-seccion {
-  /* ‑‑ centra levemente hacia la derecha ‑‑ */
-  margin-left: 6%;          /* ajusta a tu gusto (≈115 px en 1920 px) */
-  text-align: left;         /* queremos que el texto arranque donde empiece la barra */
-  position: relative;
-}
 
-.carrusel .titulo-seccion::before,
-.carrusel .titulo-seccion::after{
-  content:'';
-  position:absolute;
-  top:50%;
-  width:90px;               /* largo de las barras */
-  height:3px;
-  background:#ff4454;
-}
-
-.carrusel .titulo-seccion::before{
-  right:100%;               /* barra izquierda pegada al inicio del texto */
-  margin-right:20px;        /* separación texto‑barra */
-}
-
-.carrusel .titulo-seccion::after{
-  left:100%;                /* barra derecha después del texto */
-  margin-left:20px;
-}
-
-/* ---------- 2. TARIFARIO ---------- */
-.tarifario .titulo-seccion{
-  margin-left:6%;           /* mismo desplazamiento */
-  text-align:left;
-  position:relative;
-}
-
-.tarifario .titulo-seccion::before,
-.tarifario .titulo-seccion::after{
-  content:'';
-  position:absolute;
-  top:50%;
-  width:90px;
-  height:3px;
-  background:#ff4454;
-}
-
-.tarifario .titulo-seccion::before{
-  right:100%;
-  margin-right:20px;
-}
-
-.tarifario .titulo-seccion::after{
-  left:100%;
-  margin-left:20px;
-}
-
-/* 1️⃣  Nada puede medir más que la pantalla */
-*,
-*::before,
-*::after{
-  box-sizing:border-box;        /* evita que el padding sume ancho extra */
-}
-
-/* 2️⃣  Cortamos cualquier desbordamiento horizontal */
-html,body{
-  max-width:100%;
-  overflow-x:hidden;
-}
 
 /* 3️⃣  En pantallas chicas quitamos los adornos que se salen */
 @media(max-width:600px){
