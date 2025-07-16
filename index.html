@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona Biker Servimotos - Lavado y Mantenimiento de Motos en Perú</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="logobikr.ico" type="image/x-icon">
+    <meta name="description" content="Zona Biker ofrece lavado de motos, mantenimiento, limpieza de cascos y servicios para motociclistas en Perú. Ven a La Victoria y dale a tu moto el trato que merece.">
+    <meta name="keywords" content="lavado de motos, taller de motos, Zona Biker, mantenimiento de motos, limpieza casco, La Victoria, Lima, Perú, motolavado, comunidad biker, servimotos">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://zonabikerperu.site/" />
+
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Fondo animado -->
+<div id="particles-js"></div>
+<div class="overlay invisible">
+
+<!-- Encabezado -->
+<header class="header">
+    <div class="logo">
+        <img src="img/logobikr.png" alt="Zona Biker">
+        <h1>Zona Biker Servimotos</h1>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- Menú móvil -->
+<nav class="mobile-menu" id="mobileMenu">
+    <a href="#inicio"><i class="bi bi-house-door"></i> Inicio</a>
+    <a href="#servicios"><i class="bi bi-tools"></i> Servicios</a>
+    <a href="#tarifario"><i class="bi bi-cash-coin"></i> tarifario</a>
+    <a href="#contacto"><i class="bi bi-chat-dots"></i> Contáctanos</a>
+    <a href="#ubicacion"><i class="bi bi-geo-alt"></i> Dónde Estamos</a>
+</nav>
+
+
+
+
+<!-- Hero con video -->
+<section class="hero"  id="inicio">
+    <video autoplay muted loop playsinline class="video-fondo">
+        <source src="img/moto.mp4" type="video/mp4">
+        Tu navegador no soporta el video de fondo.
+    </video>
+    <div class="overlay">
+        <h2>Moto Lavado, Taller, Accesorios y mass...</h2>
+        <p>Tu moto merece lo mejor.<br>Cuidamos cada detalle como si fuera nuestra.</p>
+        <a href="https://wa.me/51976301160" target="_blank" class="btn-wsp">Agendar por WhatsApp</a>
+    </div>
+</section>
+
+
+<!-- Carrusel -->
+<section class="carrusel scroll-hidden" id="servicios">
+  <h2 class="titulo-seccion">Promociones y Galería</h2>
+
+  <!-- ⬇️ NUEVO WRAPPER ⬇️ -->
+  <div class="carrusel-wrapper">
+    <button class="carrusel-btn prev" aria-label="Anterior">‹</button>
+
+    <div class="carrusel-contenedor" id="carruselContenedor">
+      <!-- (tus div.slide …) -->
+      <div class="slide active"><img src="img/service1r.png" alt="Promoción 1"></div>
+      <div class="slide"><img src="img/2.png"  alt="Promoción 2"></div>
+      <div class="slide"><img src="img/3.png"  alt="Promoción 3"></div>
+      <div class="slide"><img src="img/5.png"  alt="Promoción 4"></div>
+      <div class="slide"><img src="img/6.png"  alt="Promoción 5"></div>
+      <div class="slide"><img src="img/7.png"  alt="Promoción 6"></div>
+      <div class="slide"><img src="img/8.png"  alt="Promoción 7"></div>
+      <div class="slide"><img src="img/9.png"  alt="Promoción 8"></div>
+      <div class="slide"><img src="img/10.png" alt="Promoción 9"></div>
+    </div>
+
+    <button class="carrusel-btn next" aria-label="Siguiente">›</button>
+  </div>
+</section>
+
+
+
+
+<!-- Servicios -->
+<section class="servicios scroll-hidden">
+  <h2 class="titulo-seccion">Nuestros Servicios</h2>
+
+  <div class="servicio scroll-hidden">
+    <img src="img/service1r.png" alt="Lavado básico">
+    <h3>Lavado Básico</h3>
+    <p>Eliminación de polvo, suciedad superficial, lavado en elevador.</p>
+  </div>
+
+  <div class="servicio scroll-hidden">
+    <img src="img/2.png" alt="Lavado Cascos">
+    <h3>Lavado Cascos</h3>
+    <p>Lavado interno y externo, desinfección de casco, aromatizado interno.</p>
+  </div>
+
+  <div class="servicio scroll-hidden">
+    <img src="img/3.png" alt="Mantenimiento Preventivo">
+    <h3>Mantenimiento Preventivo</h3>
+    <p>Incluye limpieza de carburador, bujías, cambio de aceite, etc.</p>
+  </div>
+</section>
+
+
+<!-- Tarifario -->
+<section class="tarifario scroll-hidden" id="tarifario" style="padding: 40px 20px; background-color: var(--gris); color: var(--blanco);">
+  <h2 class="titulo-seccion"
+    style="
+        font-family: 'Bangers', cursive;
+        font-size: 48px;
+        text-align: center;
+        color: #ff4454;
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+        text-shadow: 2px 2px 1px #000;
+        position: relative;
+    ">
+    Tarifario
+    <span style="
+        display: block;
+        width: 80px;
+        height: 4px;
+        background: #ff4454;
+        margin: 10px auto 0;
+        border-radius: 2px;">
+    </span>
+</h2>
+
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+
+    <!-- Lavados Básicos -->
+        <div class="tarjeta-tarifa">
+        <h3 style="font-size: 20px; color: #d4af37; margin-bottom: 10px;">Lavados Básicos</h3>
+        <ul style="padding-left: 16px; font-family: 'Roboto', sans-serif; font-size: 14px; color: #ddd;">
+            <li><strong>Street</strong> – S/15<br><small style="color:#aaa;">Abrillantador de llantas</small></li>
+            <li><strong>Super Bike</strong> – S/18<br><small style="color:#aaa;">Llanta, motor, cera neutra, silicona</small></li>
+            <li><strong>Chutana</strong> – S/20<br><small style="color:#aaa;">Llanta, motor, cera color, plásticos</small></li>
+        </ul>
+        </div>
+
+    <!-- Lavados Premium -->
+    <div class="tarjeta-tarifa" id="contacto">
+      <h3 style="font-size: 20px; color: #d4af37; margin-bottom: 10px;">Lavados Premium</h3>
+      <ul style="padding-left: 16px; font-family: 'Roboto', sans-serif; font-size: 14px; color: #ddd;">
+        <li><strong>GP Premium</strong> – S/35<br><small style="color:#aaa;">Motor, espejos, cera neutra, desengrasado, spray, cadena transparente</small></li>
+        <li><strong>GP Premium Color</strong> – S/40<br><small style="color:#aaa;">Motor, espejos, cera color, desengrasado, spray, cadena a color</small></li>
+      </ul>
+    </div>
+
+    <!-- Servicios Adicionales -->
+    <div class="tarjeta-tarifa" >
+      <h3 style="font-size: 20px; color: #d4af37; margin-bottom: 10px;">Servicios Adicionales</h3>
+      <ul style="padding-left: 16px; font-family: 'Roboto', sans-serif; font-size: 14px; color: #ddd;">
+        <li>Sistema de arrastre IPONE transparente – S/18</li>
+        <li>Sistema de arrastre IPONE color – S/20</li>
+        <li>Desengrasado motor / aros / arrastre – S/7 c/u</li>
+        <li>Lubricación cadena transparente – S/6</li>
+        <li>Lubricación cadena a color – S/8</li>
+        <li>Limpieza casco exterior – S/12</li>
+        <li>Lavado casco completo (1 día) – S/30</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- Contacto -->
+<section class="contacto scroll-hidden" >
+    <h2 class="titulo-seccion scroll-hidden">Contáctanos</h2>
+    <p>Estamos para atenderte y dejar tu moto impecable. Puedes escribirnos o visitarnos directamente.</p>
+    <div class="redes scroll-hidden">
+        <a href="https://wa.me/51976301160" target="_blank">
+            <i class="bi bi-whatsapp scroll-hidden"></i>
+        </a>
+        <a href="https://www.instagram.com/zonabikerservimotos/" target="_blank">
+            <i class="bi bi-instagram scroll-hidden"></i>
+        </a>
+        <a href="https://www.facebook.com/zonabikerservimotos" target="_blank">
+            <i class="bi bi-facebook scroll-hidden"></i>
+        </a>
+        <a href="https://www.tiktok.com/@zonabikerservimotos" target="_blank">
+            <i class="bi bi-tiktok scroll-hidden"></i>
+        </a>
+    </div>
+    
+    
+
+<!-- Ubicación -->
+<section class="ubicacion scroll-hidden" id="ubicacion">
+    <h2 class="titulo-seccion scroll-hidden">Ubicación</h2>
+    <p>Nos encontramos en <strong>Av. Parinacochas 2208 - La Victoria</strong>. Ven con tu moto, te esperamos con la mejor atención biker. 🏍️🔥</p>
+<div class="mapa scroll-hidden">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.8085292834166!2d-77.0242513!3d-12.0808283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8dbee3ff1e9%3A0xbf172953f60cb6e8!2sZona%20Biker%20Servimotos!5e0!3m2!1ses-419!2spe!4v1720312373265!5m2!1ses-419!2spe"
+        width="100%"
+        height="300"
+        style="border:0; border-radius: 15px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <div style="text-align:center; margin-top: 10px;">
+        <a href="https://maps.app.goo.gl/TLMTYVg6qhJjWMUP6"
+           target="_blank"
+           style="color: white; background-color: #ff4454; padding: 10px 20px; border-radius: 8px; text-decoration: none; display: inline-block;">
+           📍 Ver en Google Maps
+        </a>
+    </div>
+</div>
+
+    
+</section>
+
+<!-- Footer -->
+<footer class="footer scroll-hidden" style="background-color: #000000; color: #ccc; padding: 30px 20px; font-family: 'Roboto', sans-serif; text-align: center; font-size: 14px;">
+    <p style="margin-bottom: 10px;">&copy; 2025 <strong style="color: #ff4454;">Zona Biker Servimotos</strong> - Todos los derechos reservados</p>
+    <p style="margin: 4px 0;"><i class="bi bi-geo-alt-fill" style="color:#ff4454;"></i> Av. Parinacochas 2208, La Victoria</p>
+    <p style="margin: 4px 0;"><i class="bi bi-clock-fill" style="color:#ff4454;"></i> Lunes a Sábado de 10:00am a 8:00pm</p>
+    <p style="margin: 4px 0;"><i class="bi bi-envelope-fill" style="color:#ff4454;"></i> <a href="mailto:kikeamayodj@gmail.com" style="color: #ccc; text-decoration: underline;">kikeamayodj@gmail.com</a></p>
+</footer>
+
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    const hamburger = document.querySelector('.hamburger');
+    
+    menu.classList.toggle('active');
+    hamburger.classList.toggle('open');
+}
+
+</script>
+
+
+<script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const carrusel = document.getElementById('carruselContenedor');
+    let interval = setInterval(() => moverSlide(1, 'izquierda'), 3000);
+
+    function moverSlide(n, direccion = 'izquierda') {
+        slides[slideIndex].classList.remove('active', 'deslizar-izquierda', 'deslizar-derecha');
+        slideIndex = (slideIndex + n + slides.length) % slides.length;
+        slides[slideIndex].classList.add('active');
+
+        if (direccion === 'izquierda') {
+            slides[slideIndex].classList.add('deslizar-izquierda');
+        } else {
+            slides[slideIndex].classList.add('deslizar-derecha');
+        }
+    }
+
+    // Swipe táctil
+    let startX = 0;
+    let isSwiping = false;
+
+        // Swipe táctil optimizado con passive
+        carrusel.addEventListener('touchstart', e => {
+            startX = e.touches[0].clientX;
+            isSwiping = true;
+            clearInterval(interval);
+        }, { passive: true });
+
+        carrusel.addEventListener('touchmove', e => {
+            if (!isSwiping) return;
+            const diffX = e.touches[0].clientX - startX;
+
+            if (Math.abs(diffX) > 50) {
+                if (diffX > 0) {
+                    moverSlide(-1, 'derecha');
+                } else {
+                    moverSlide(1, 'izquierda');
+                }
+                isSwiping = false;
+            }
+        }, { passive: true });
+
+        carrusel.addEventListener('touchend', () => {
+            isSwiping = false;
+            interval = setInterval(() => moverSlide(1, 'izquierda'), 3000);
+        }, { passive: true });
+
+</script>
+
+<script>
+    window.addEventListener('scroll', () => {
+        const scrollProgress = document.getElementById('scrollProgress');
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+        scrollProgress.style.width = scrollPercent + '%';
+    });
+</script>
+
+
+<script>window.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.overlay').classList.remove('invisible');
+});
+</script>
+<script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('scroll-visible');
+                // Desactiva si no quieres que vuelva a ocultarse al salir
+                observer.unobserve(entry.target); 
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    document.querySelectorAll('.scroll-hidden').forEach(el => observer.observe(el));
+</script>
+
+<script>
+/* ——— Flechas manuales para escritorio ——— */
+document.querySelector('.carrusel-btn.prev')
+        .addEventListener('click',()=>moverSlide(-1,'derecha'));
+document.querySelector('.carrusel-btn.next')
+        .addEventListener('click',()=>moverSlide( 1,'izquierda'));
+
+/* Pausa el autoplay cuando el usuario pone el ratón encima */
+const wrapper = document.querySelector('.carrusel-wrapper');
+wrapper.addEventListener('mouseenter',()=>clearInterval(interval));
+wrapper.addEventListener('mouseleave',()=>{
+  interval = setInterval(()=>moverSlide(1,'izquierda'),3000);
+});
+</script>
+
+</body>
+</html>
