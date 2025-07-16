@@ -904,3 +904,34 @@
   left:100%;
   margin-left:20px;
 }
+
+/* 1️⃣  Nada puede medir más que la pantalla */
+*,
+*::before,
+*::after{
+  box-sizing:border-box;        /* evita que el padding sume ancho extra */
+}
+
+/* 2️⃣  Cortamos cualquier desbordamiento horizontal */
+html,body{
+  max-width:100%;
+  overflow-x:hidden;
+}
+
+/* 3️⃣  En pantallas chicas quitamos los adornos que se salen */
+@media(max-width:600px){
+  /* Las barritas decorativas de los títulos son las que
+     más se “desbordan” (miden 90 px hacia cada lado)      */
+  .titulo-seccion::before,
+  .titulo-seccion::after{
+    display:none;               /* las ocultamos en móvil */
+  }
+
+  /* Los márgenes que empujan el título a la derecha
+     (margin-left:6%) también generan anchura extra      */
+  .carrusel .titulo-seccion,
+  .tarifario .titulo-seccion{
+    margin-left:0;              /* centrado normal en móvil */
+    text-align:center;
+  }
+}
